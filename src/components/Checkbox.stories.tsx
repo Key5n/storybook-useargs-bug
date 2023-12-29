@@ -11,6 +11,9 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+/**
+ * uses useArgs API to implement togglable checkbox
+ */
 export const UseArgsStory: Story = {
   args: {
     isChecked: false,
@@ -18,6 +21,9 @@ export const UseArgsStory: Story = {
   render: UseArgsRender,
 };
 
+/**
+ * uses useState API to implement togglable checkbox
+ */
 export const UseStateStory: Story = {
   args: {
     isChecked: false,
